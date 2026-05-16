@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SR FITNESS — Membership</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+  <div class="nav-logo">
+
+    <div class="nav-logo-icon">SR</div>
+
+    <div class="nav-logo-text"><span>SR</span> FITNESS</div>
+
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html" >Home</a></li>
+
+    <li><a href="workouts.html">Workouts</a></li>
+
+    <li><a href="diet.html">Diet Plans</a></li>
+
+    <li><a href="trainers.html">Trainers</a></li>
+
+    <li><a href="bmi.html">BMI Calculator</a></li>
+
+    <li><a href="membership.html" class="active">Membership</a></li>
+
+  </ul>
+
+  <button class="nav-cta" onclick="window.location.href='auth.html'">Join Now</button>
+
+</nav>
+
+<!-- STATS STRIP -->
+
+<div class="stats-strip">
+
+  <div>
+
+    <div class="stat-item-num">12,847</div>
+
+    <div class="stat-item-label">Members Transformed</div>
+
+  </div>
+
+  <div>
+
+    <div class="stat-item-num">98%</div>
+
+    <div class="stat-item-label">Client Satisfaction</div>
+
+  </div>
+
+  <div>
+
+    <div class="stat-item-num">50+</div>
+
+    <div class="stat-item-label">Certified Trainers</div>
+
+  </div>
+
+  <div>
+
+    <div class="stat-item-num">200+</div>
+
+    <div class="stat-item-label">Programs Available</div>
+
+  </div>
+
+</div>
+
+<!-- MEMBERSHIP -->
+
+<section class="membership-section" id="membership">
+
+  <div class="section-label"><span>Membership Plans</span></div>
+
+  <h2 class="section-title">INVEST IN<br>YOUR LIMITS</h2>
+
+  <div class="plans-grid">
+
+    <div class="plan-card">
+
+      <div class="plan-name">STARTER</div>
+
+      <div style="font-size:12px;color:var(--gray-400);margin-bottom:0.5rem">Perfect for beginners</div>
+
+      <div class="plan-price">₹1,499</div>
+
+      <div class="plan-period">per month</div>
+
+      <div class="plan-divider"></div>
+
+      <ul class="plan-features">
+
+        <li>Access to gym floor (6am–10pm)</li>
+
+        <li>3 group classes per week</li>
+
+        <li>Basic fitness assessment</li>
+
+        <li>Locker room access</li>
+
+        <li>Mobile app tracking</li>
+
+      </ul>
+
+      <button class="plan-btn plan-btn-ghost" onclick="selectPlan('Starter', '₹1,499')">Get Started</button>
+
+    </div>
+
+    <div class="plan-card featured">
+
+      <div class="plan-badge">Most Popular</div>
+
+      <div class="plan-name">PRO ATHLETE</div>
+
+      <div style="font-size:12px;color:var(--gray-400);margin-bottom:0.5rem">Maximum results</div>
+
+      <div class="plan-price" style="color:var(--red)">₹3,499</div>
+
+      <div class="plan-period">per month</div>
+
+      <div class="plan-divider"></div>
+
+      <ul class="plan-features">
+
+        <li>24/7 gym access</li>
+
+        <li>Unlimited group classes</li>
+
+        <li>4 personal training sessions</li>
+
+        <li>Custom nutrition plan</li>
+
+        <li>Monthly body composition scan</li>
+
+        <li>Priority trainer booking</li>
+
+        <li>Recovery zone access</li>
+
+      </ul>
+
+      <button class="plan-btn plan-btn-solid" onclick="selectPlan('Pro Athlete', '₹3,499')">Join Pro →</button>
+
+    </div>
+
+    <div class="plan-card">
+
+      <div class="plan-name">ELITE</div>
+
+      <div style="font-size:12px;color:var(--gray-400);margin-bottom:0.5rem">White glove service</div>
+
+      <div class="plan-price">₹7,999</div>
+
+      <div class="plan-period">per month</div>
+
+      <div class="plan-divider"></div>
+
+      <ul class="plan-features">
+
+        <li>Everything in Pro</li>
+
+        <li>Unlimited personal training</li>
+
+        <li>Dedicated head coach</li>
+
+        <li>Weekly check-ins & adjustments</li>
+
+        <li>Supplement consultation</li>
+
+        <li>Guest passes (4/month)</li>
+
+        <li>Annual blood panel analysis</li>
+
+        <li>Priority everything</li>
+
+      </ul>
+
+      <button class="plan-btn plan-btn-ghost" onclick="selectPlan('Elite', '₹7,999')">Go Elite</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <div class="nav-logo">
+
+        <div class="nav-logo-icon">SR</div>
+
+        <div class="nav-logo-text"><span>SR</span> FITNESS</div>
+
+      </div>
+
+      <p class="footer-brand-desc">The evolution of fitness starts here. Elite coaching, data-driven nutrition, and high-performance equipment for those who refuse to settle.</p>
+
+    </div>
+
+    <div>
+
+      <div class="footer-col-title">Programs</div>
+
+      <ul class="footer-links">
+
+        <li><a href="#">Strength Forge</a></li>
+
+        <li><a href="#">Fat Incinerator</a></li>
+
+        <li><a href="#">Athlete Elite</a></li>
+
+        <li><a href="#">Mobility Matrix</a></li>
+
+        <li><a href="#">Cardio Command</a></li>
+
+      </ul>
+
+    </div>
+
+    <div>
+
+      <div class="footer-col-title">Company</div>
+
+      <ul class="footer-links">
+
+        <li><a href="#">About Us</a></li>
+
+        <li><a href="#">Our Trainers</a></li>
+
+        <li><a href="#">Success Stories</a></li>
+
+        <li><a href="#">Careers</a></li>
+
+        <li><a href="#">Blog</a></li>
+
+      </ul>
+
+    </div>
+
+    <div>
+
+      <div class="footer-col-title">Support</div>
+
+      <ul class="footer-links">
+
+        <li><a href="#">Contact</a></li>
+
+        <li><a href="#">FAQ</a></li>
+
+        <li><a href="#">Privacy Policy</a></li>
+
+        <li><a href="#">Terms</a></li>
+
+        <li><a href="#">Locations</a></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <div class="footer-copy">© 2025 SR Fitness. All rights reserved. Bengaluru, India.</div>
+
+    <div class="footer-socials">
+
+      <a class="social-btn" href="#">in</a>
+
+      <a class="social-btn" href="#">ig</a>
+
+      <a class="social-btn" href="#">yt</a>
+
+      <a class="social-btn" href="#">tw</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- LIVE FEED -->
+
+<div class="live-feed">
+
+  <div class="live-dot"></div>
+
+  <span class="live-label">Live Feed</span>
+
+  <span class="live-text" id="live-text">Hydrate every 15 minutes of intense cardio.</span>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
